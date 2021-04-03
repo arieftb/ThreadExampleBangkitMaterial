@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BackgroundExampleActivity">
+
+    <TextView
+        android:id="@+id/textBackgroundTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Background Example"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBackgroundStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Background Start"
+        app:layout_constraintTop_toBottomOf="@id/textBackgroundTitle"/>
+
+    <Button
+        android:id="@+id/buttonBackgroundCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Background Check"
+        app:layout_constraintTop_toBottomOf="@id/buttonBackgroundStart"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
